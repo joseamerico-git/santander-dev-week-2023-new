@@ -1,12 +1,9 @@
 spring:
- datasource:
-   #url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}
-   #username: ${PGUSER}
-   #password: ${PGPASSWORD}
-    url: jdbc:postgresql://containers-us-west-35.railway.app:7005/railway
-    username: postgres
-    password: 24FhZchF7kRKsw3z5NjA
- jpa:
+  datasource:
+    url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}
+    username: ${PGUSER}
+    password: ${PGPASSWORD}
+  jpa:
     open-in-view: false
-    hibernate:   # A primeira vez tenho que colocar como create e depois voltar para validate
+    hibernate:
       ddl-auto: create # validate | update | create | delete

@@ -5,5 +5,5 @@ spring:
     password: ${PGPASSWORD}
   jpa:
     open-in-view: false
-    hibernate:   # A primeira vez tenho que colocar como create e depois voltar para validate
-      ddl-auto: validate # validate | update | create | delete
+    hibernate:
+      ddl-auto: create # validate | update | create | delete
