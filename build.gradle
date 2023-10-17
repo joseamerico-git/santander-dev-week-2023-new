@@ -27,3 +27,9 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+tasks.jar{
+	manifest {
+		attributes["Main-Class"] = 'doichejunior.Application'
+	}
+}
