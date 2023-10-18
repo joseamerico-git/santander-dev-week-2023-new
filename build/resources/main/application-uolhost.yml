@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:mysql://${PGHOST}:${PGPORT}/${PGDATABASE}
+    username: ${PGUSER}
+    password: ${PGPASSWORD}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: create # validate | update | create | delete
